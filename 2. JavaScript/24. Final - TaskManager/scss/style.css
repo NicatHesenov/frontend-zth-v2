@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.taskManager {
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: column;
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+.taskManager__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.taskManager__header__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.taskManager__header__left--title {
+  font-size: 5rem;
+}
+.taskManager__header__left--description {
+  font-size: 2rem;
+}
+.taskManager__header__right {
+  width: 4.4rem;
+  height: 4.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 0.4rem;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.taskManager__header__right .fa-sun {
+  display: none;
+}
+.taskManager__stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  font-size: 2rem;
+  width: 100%;
+}
+.taskManager__stat {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 3rem;
+  border-radius: 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.taskManager__stat:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+.taskManager__stat-bg {
+  border: 1px solid;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+.taskManager__stat--total {
+  border: 1px solid gray;
+}
+.taskManager__stat--total .taskManager__stat-count,
+.taskManager__stat--total .taskManager__stat-bg {
+  color: gray;
+}
+.taskManager__stat--active {
+  border: 1px solid #3b82f6;
+}
+.taskManager__stat--active .taskManager__stat-count,
+.taskManager__stat--active .taskManager__stat-bg {
+  color: #3b82f6;
+}
+.taskManager__stat--completed {
+  border: 1px solid #10b981;
+}
+.taskManager__stat--completed .taskManager__stat-count,
+.taskManager__stat--completed .taskManager__stat-bg {
+  color: #10b981;
+}/*# sourceMappingURL=style.css.map */

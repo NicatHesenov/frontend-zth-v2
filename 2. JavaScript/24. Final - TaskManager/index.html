@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+    />
+    <link rel="stylesheet" href="scss/style.css" />
+  </head>
+  <body>
+    <div class="taskManager">
+      <div class="taskManager__header">
+        <div class="taskManager__header__left">
+          <h1 class="taskManager__header__left--title">Tapşırıq Meneceri</h1>
+          <p class="taskManager__header__left--description">
+            Tapşırıqlarınızı effektiv idarə edin
+          </p>
+        </div>
+        <div class="taskManager__header__right">
+          <i class="fa-regular fa-moon"></i>
+          <i class="fa-regular fa-sun"></i>
+        </div>
+      </div>
+
+      <div class="taskManager__stats">
+        <div class="taskManager__stat taskManager__stat--total">
+          <div class="taskManager__stat-info">
+            <p class="taskManager__stat-title">Ümumi Tapşırıq</p>
+            <span class="taskManager__stat-count" id="totalCount">0</span>
+          </div>
+          <span class="taskManager__stat-bg"
+            ><i class="fa-regular fa-circle"></i
+          ></span>
+        </div>
+
+        <div class="taskManager__stat taskManager__stat--active">
+          <div class="taskManager__stat-info">
+            <p class="taskManager__stat-title">Aktiv</p>
+            <span class="taskManager__stat-count" id="activeCount">0</span>
+          </div>
+          <span class="taskManager__stat-bg"
+            ><i class="fa-regular fa-circle"></i
+          ></span>
+        </div>
+
+        <div class="taskManager__stat taskManager__stat--completed">
+          <div class="taskManager__stat-info">
+            <p class="taskManager__stat-title">Tamamlandı</p>
+            <span class="taskManager__stat-count" id="completedCount">0</span>
+          </div>
+          <span class="taskManager__stat-bg"
+            ><i class="fa-regular fa-circle-check"></i
+          ></span>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

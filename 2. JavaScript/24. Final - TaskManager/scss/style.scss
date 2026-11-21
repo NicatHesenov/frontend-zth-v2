@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.taskManager {
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: column;
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    &__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &--title {
+        font-size: 5rem;
+      }
+      &--description {
+        font-size: 2rem;
+      }
+    }
+    &__right {
+      width: 4.4rem;
+      height: 4.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      border: 2px solid;
+      border-radius: 50%;
+      padding: 0.4rem;
+      cursor: pointer;
+      box-shadow:
+        rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+      .fa-sun {
+        display: none;
+      }
+    }
+  }
+
+  &__stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    font-size: 2rem;
+    width: 100%;
+  }
+  &__stat {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    box-shadow:
+      rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 3rem;
+    border-radius: 2rem;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    }
+    &-bg {
+      border: 1px solid;
+      padding: 0.5rem;
+      border-radius: 2rem;
+    }
+    &--total {
+      border: 1px solid gray;
+      .taskManager__stat-count,
+      .taskManager__stat-bg {
+        color: gray;
+      }
+    }
+    &--active {
+      border: 1px solid #3b82f6;
+      .taskManager__stat-count,
+      .taskManager__stat-bg {
+        color: #3b82f6;
+      }
+    }
+    &--completed {
+      border: 1px solid #10b981;
+      .taskManager__stat-count,
+      .taskManager__stat-bg {
+        color: #10b981;
+      }
+    }
+  }
+}
