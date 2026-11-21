@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+$navbar-bg-color: #183e54;
+$navbar-color: #353535;
+$white-color: #ffffff;
+$primary-color: #109932;
+$secondary-color: #0f1747;
+$third-color: #4a4a4a;
+$fourth-color: #082517;
+$fifth-bg-color: #0b1420;
+$sixth-color: #5a6456;
+$black-color: #000000;
+$footer-bg-color: #fdfdfd;
+
+$primary-bg-linear-gradient: linear-gradient(
+  180deg,
+  rgba(97, 144, 232, 0.2) 0%,
+  rgba(167, 191, 232, 0.1) 100%
+);
+
+$secondary-bg-linear-gradient: linear-gradient(
+  180deg,
+  rgba(40, 48, 72, 0.3) 0%,
+  rgba(133, 147, 152, 0.3) 100%
+);
+$third-bg-linear-gradient: linear-gradient(
+  180deg,
+  rgba(51, 77, 80, 0.4) 0%,
+  rgba(203, 202, 165, 0.3) 100%
+);
+$fourth-bg-linear-gradient: linear-gradient(
+  180deg,
+  rgba(173, 169, 150, 0.3) 0%,
+  rgba(242, 242, 242, 0.66) 50%,
+  rgba(231, 231, 231, 0.69) 75%,
+  rgba(234, 234, 234, 0.76) 100%
+);
+$fifth-bg-linear-gradient: linear-gradient(
+  180deg,
+  rgba(62, 81, 81, 0.4) 0%,
+  rgba(222, 203, 164, 0.3) 100%
+);
+$sixth-bg-linear-gradient: linear-gradient(
+  180deg,
+  rgba(62, 81, 81, 0.4) 0%,
+  rgba(222, 203, 164, 0.3) 100%
+);
+
+$seventh-bg-linear-gradient: linear-gradient(
+  180deg,
+  rgba(203, 202, 165, 0.3) 0%,
+  rgba(51, 77, 80, 0.4) 100%
+);
+
+$eighth-bg-linear-gradient: linear-gradient(
+  180deg,
+  rgba(28, 146, 210, 0.3) 0%,
+  rgba(242, 252, 254, 0.3) 100%
+);
+// font
+$font-regular: 400;
+
+$font-medium: 500;
+
+$font-bold: 700;
+
+// BREAKPOİNT
+$breakpoint-sm: 576px;
+
+$breakpoint-md: 768px;
+
+$breakpoint-lg: 992px;
+
+$breakpoint-xl: 1200px;
+
+// RADİOUS
+$container-max-width: 1200px;
+
+$border-radius-sm: 4px;
+
+$border-radius-md: 8px;
+
+$border-radius-lg: 16px;
+
+// FONT SIZE
+$header-fontSize: 2.5rem;
+
+// mixin
+@mixin flex-center($display: flex, $justifyContent, $alignItems, $gap) {
+  display: $display;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  gap: $gap;
+}
+
+// @mixin grid-theme($display: grid,);
+%boxs-tamblet {
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px 40px;
+}
+
+%page-img {
+  width: 100%;
+  height: 150px;
+  max-width: 400px;
+}
+%font-title {
+  font-family: DM Sans;
+  font-weight: 600;
+  font-size: clamp(1.75rem, 1.35rem + 1.78vw, 2.5rem);
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+%font-text {
+  font-family: " DM Sans" sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.875rem, 0.775rem + 0.5vw, 1rem);
+  max-width: 271px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+%page-btns {
+  font-family: "DM Sans" sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.41px;
+  text-align: center;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+%service-btn {
+  color: $white-color;
+  background-color: $primary-color;
+  border: transparent;
+  border-radius: 32px;
+  padding: 0.5rem 1rem;
+}
+%learn-btn {
+  color: $primary-color;
+  background-color: transparent;
+  border: 1px solid $primary-color;
+  border-radius: 32px;
+  padding: 0.5rem 1rem;
+}

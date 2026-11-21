@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Işçi İdarəetmə Sistemi</h1>
+      <div class="content">
+        <div class="workerManagerSystem">
+          <div class="workerManagerSystem__container">
+            <h2 class="workerManagerSystem--title">Yeni Işçi Əlavə et</h2>
+            <div class="workerManagerSystem__content">
+              <div class="workerManagerSystem__inputs">
+                <input class="fullName" type="text" placeholder="Ad və Soyad" />
+                <input class="age" type="number" placeholder="Yaş" />
+                <input class="position" type="text" placeholder="Vəzifə" />
+                <input
+                  class="experience"
+                  type="number"
+                  placeholder="Təcrübə(illər)"
+                />
+
+                <label for="cars">Bacarıqlar seçin:</label>
+
+                <select id="skills" name="skills">
+                  <option value="junior">Junior</option>
+                  <option value="middle">Middle</option>
+                  <option value="senior">Senior</option>
+                </select>
+                <input
+                  class="startDate"
+                  type="date"
+                  placeholder="İşə başlama tarixi"
+                />
+              </div>
+              <button class="workerManagerSystem--btn">əlavə et</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="workerManagerForm">
+          <div class="workerManagerForm">
+            <table>
+              <thead>
+                <tr>
+                  <th>&#8470;</th>
+                  <th>Ad və Soyad</th>
+                  <th>Yaş</th>
+                  <th>Vəzifə</th>
+                  <th>Təcrübə(illər)</th>
+                  <th>Bacarıqlar</th>
+                  <th>Işə Başlama Tarixi</th>
+                  <th>Əməliyyat</th>
+                </tr>
+              </thead>
+              <tbody class="table-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

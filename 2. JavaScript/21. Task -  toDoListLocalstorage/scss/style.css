@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+}
+
+.todoApp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.todoApp__container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px 40px;
+  width: 100%;
+  max-width: 400px;
+  min-height: 450px;
+  border-radius: 5px;
+}
+.todoApp__input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.todoApp__input input {
+  padding: 10px 15px;
+  width: 100%;
+}
+.todoApp__input--addBtn {
+  padding: 7px 7px;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.todoApp__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.todoApp__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background: rgba(128, 128, 128, 0.242);
+  gap: 5px;
+  padding-left: 12px;
+}
+.todoApp__item--deletBtn {
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: red;
+  padding: 10px;
+  font-size: 15px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.todoApp__item:hover .todoApp__item--deletBtn {
+  opacity: 1;
+}
+.todoApp__summer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 20px;
+}
+.todoApp__summer--clearAll {
+  border: none;
+  padding: 10px;
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

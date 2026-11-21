@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: blue;
+}
+.toDoList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  h1 {
+    color: white;
+  }
+  &__content {
+    border: 1px solid white;
+    padding: 10px 60px;
+    height: 60vh;
+  }
+  &__input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border: none;
+    input {
+      padding: 10px 20px;
+      background-color: white;
+      color: black;
+    }
+    span {
+      cursor: pointer;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border: 1px solid;
+    padding: 5px 10px;
+    .close-btn {
+      cursor: pointer;
+    }
+  }
+}

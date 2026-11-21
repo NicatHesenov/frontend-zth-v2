@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background-color: black;
+  color: white;
+}
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar__right i {
+  font-size: 25px;
+}
+.navbar__left {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.navbar__left i {
+  color: yellow;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 40px;
+  max-width: 900px;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container__searchings {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+.container__searchings--input {
+  flex: 1;
+  padding: 10px 15px;
+}
+.container__searchings--select {
+  padding: 10px 15px;
+  min-width: 180px;
+}
+.container__inputContainer {
+  display: flex;
+  gap: 10px;
+}
+.container__inputContainer input {
+  flex: 1;
+  padding: 10px 10px;
+}
+.container__inputContainer button {
+  border: none;
+  cursor: pointer;
+  background-color: green;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+.container__tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container__task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: white;
+  padding: 10px 5px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+.container__task button {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

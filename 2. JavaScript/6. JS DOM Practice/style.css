@@ -1,0 +1,39 @@
+.box {
+  border: 1px solid red;
+  width: 200px;
+  height: 200px;
+}
+.btn-container > button {
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+}
+.green {
+  background-color: green;
+  color: white;
+}
+.red {
+  background-color: red;
+  color: white;
+}
+.blue {
+  background-color: blue;
+  color: white;
+}
+/* ----------------- */
+
+.hidden {
+  display: none;
+}
+/* ----------------- */
+
+.plus,
+.minus {
+  cursor: pointer;
+}
+/* ---------------- */
+.taskFive-div {
+  border: 1px solid;
+  width: 20px;
+  height: 20px;
+}

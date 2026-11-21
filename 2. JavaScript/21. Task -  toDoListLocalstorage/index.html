@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+    />
+    <link rel="stylesheet" href="./scss/style.css" />
+  </head>
+  <body>
+    <div class="todoApp">
+      <div class="todoApp__container">
+        <h1 class="todoApp--head">Todo App</h1>
+        <div class="todoApp__input">
+          <input type="text" placeholder="Add your new todo" />
+          <button class="todoApp__input--addBtn">+</button>
+        </div>
+        <div class="todoApp__list"></div>
+        <div class="todoApp__summer">
+          <p class="todoApp__text">
+            You have <span class="pendingCount">0</span> pending tasks
+          </p>
+          <button class="todoApp__summer--clearAll">Clear All</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

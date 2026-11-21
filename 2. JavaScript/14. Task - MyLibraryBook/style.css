@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.library {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.library__container {
+  border: 1px solid;
+  padding: 20px 40px;
+  width: 100%;
+  max-width: 600px;
+}
+.library__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+input {
+  padding: 5px;
+}
+.library-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.library-btn {
+  padding: 5px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid;
+  padding: 5px;
+}
+.card__container {
+  display: flex;
+  gap: 10px;
+}

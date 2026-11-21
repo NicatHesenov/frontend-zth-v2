@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="./img/Group.png" alt="login" />
+        <h1 class="header__title">
+          <span class="text-italic">The</span><span class="text-bold">Box</span>
+        </h1>
+      </div>
+      <nav class="navbar">
+        <ul class="navbar__menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#" class="nav-link--contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section__first">
+        <h1 class="section__first--title">
+          Building things <br />
+          is our mission.
+        </h1>
+
+        <div class="feature__container">
+          <div class="feature__content">
+            <h3 class="feature__container--title">Feature Projects</h3>
+            <p class="feature__container--text">
+              The National University of Architecture
+            </p>
+          </div>
+
+          <div class="feature__btn">
+            <button type="button" class="btn back">
+              <span>&larr;</span> Back
+            </button>
+            <button type="button" class="btn next">
+              Next <span>&rarr;</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------------------- -->
+      <section class="reputation">
+        <div class="reputation__container">
+          <h2 class="reputation__title">Our Reputation</h2>
+
+          <div class="reputation__cards">
+            <!-- card 1 -->
+            <article class="reputation__card">
+              <i class="fa-solid fa-headset reputation__icon"></i>
+              <h3 class="reputation__card--title">Best Services</h3>
+              <p class="reputation__card--text">
+                Nullam senectus porttitor in eget. Eget rutrum leo interdum.
+              </p>
+            </article>
+            <!-- Card 2 -->
+            <article class="reputation__card">
+              <i class="fa-solid fa-headset reputation__icon"></i>
+              <h3 class="reputation__card--title">Best Teams</h3>
+              <p class="reputation__card--text">
+                Cursus semper tellus volutpat aliquet lacus.
+              </p>
+            </article>
+            <article class="reputation__card">
+              <i class="fa-solid fa-pen-ruler reputation__icon"></i>
+              <h3 class="reputation__card--title">Best Designs</h3>
+              <p class="reputation__card--text">
+                Ultricies at ipsum nunc, tristique nam lectus.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------ -->
+      <section class="about">
+        <div class="about__container">
+          <img
+            src="./img/aboutUs.jpg"
+            alt="about us"
+            class="about__container-img"
+          />
+          <div class="about__content">
+            <h2 class="about__content-title">About us</h2>
+            <p class="about__content-text">
+              For more than 30 years we have been delivering world-class
+              construction and we’ve built many lasting relationships along the
+              way.
+            </p>
+            <p class="about__content-text">
+              We’ve matured into an industry leader and trusted resource for
+              those seeking quality, innovation and reliability when building in
+              the U.S.
+            </p>
+            <a href="#" class="about__content-btn">More on Our History</a>
+          </div>
+        </div>
+      </section>
+      <!-- ----------------------- -->
+      <section class="services">
+        <div class="services__container">
+          <h2 class="services__container-title">Services</h2>
+          <div class="services__cards">
+            <!-- 1 -->
+            <div class="services__card">
+              <i class="fa-solid fa-city"></i>
+              <span class="services__divider"></span>
+              <p class="services__card-text">Construction</p>
+            </div>
+            <!-- 2 -->
+            <div class="services__card">
+              <i class="fa-solid fa-paint-roller"></i>
+              <span class="services__divider"></span>
+              <p class="services__card-text">Renovation</p>
+            </div>
+            <!-- 3 -->
+            <div class="services__card">
+              <i class="fa-solid fa-handshake"></i>
+              <span class="services__divider"></span>
+              <p class="services__card-text">Consultation</p>
+            </div>
+            <!-- 4 -->
+            <div class="services__card">
+              <i class="fa-solid fa-toolbox"></i>
+              <span class="services__divider"></span>
+              <p class="services__card-text">Repair Services</p>
+            </div>
+            <!-- 5 -->
+            <div class="services__card">
+              <i class="fa-solid fa-compass-drafting"></i>
+              <span class="services__divider"></span>
+              <p class="services__card-text">Architecture</p>
+            </div>
+            <!-- 6 -->
+            <div class="services__card">
+              <i class="fa-solid fa-plug"></i>
+              <span class="services__divider"></span>
+              <p class="services__card-text">Electric</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- --------------------------- -->
+      <section class="experience">
+        <div class="experience__container">
+          <!-- Kartlar Bloku -->
+          <div class="experience__cards">
+            <!-- Mərkəzdən keçən xətt -->
+            <div class="experience__line"></div>
+
+            <!-- 1: 123 (Sol Üst) -->
+            <div class="experience__card experience__card--1">
+              <img
+                class="experience__card-img img-left"
+                src="./img/experience/card2.png"
+                alt=""
+              />
+              <h2 class="experience__card-num">123</h2>
+              <div class="experience__card-info">
+                <span class="experience__card-divider"></span>
+                <p class="experience__card-text">Projects Completed</p>
+              </div>
+            </div>
+
+            <!-- 2: 84 (Sağ Üst) -->
+            <div class="experience__card experience__card--2">
+              <img
+                class="experience__card-img img-right"
+                src="./img/experience/card1.png"
+                alt=""
+              />
+              <h2 class="experience__card-num">84</h2>
+              <div class="experience__card-info">
+                <span class="experience__card-divider"></span>
+                <p class="experience__card-text">Happy Clients</p>
+              </div>
+            </div>
+
+            <!-- 3: 37 (Orta Sağ) -->
+            <div class="experience__card experience__card--3">
+              <img
+                class="experience__card-img img-right"
+                src="./img/experience/card3.png"
+                alt=""
+              />
+              <h2 class="experience__card-num">37</h2>
+              <div class="experience__card-info">
+                <span class="experience__card-divider"></span>
+                <p class="experience__card-text">Awards Win</p>
+              </div>
+            </div>
+
+            <!-- 4: 30 (Sol Aşağı) -->
+            <div class="experience__card experience__card--4">
+              <h2 class="experience__card-num">30</h2>
+              <div class="experience__card-info">
+                <span class="experience__card-divider"></span>
+                <p class="experience__card-text">Years in Business</p>
+              </div>
+              <img
+                class="experience__card-img img-bottom"
+                src="./img/experience/card4.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!-- Mətn Bloku -->
+          <div class="experience__content">
+            <h2 class="experience__content-title">30 Years<br />Experience</h2>
+            <p class="experience__content-text">
+              Our company has been the leading provided construction services to
+              clients throughout the USA since 1988.
+            </p>
+            <button class="experience__content-btn">Contact Us</button>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------- -->
+
+      <section class="consultation">
+        <div class="consultation__container">
+          <article class="consultation__content">
+            <h2 class="consultation__content-title">
+              Free consultation with exceptional quality
+            </h2>
+            <p class="consultation__content-text">
+              Just one call away: <span class="text-num">+84 1102 2703</span>
+            </p>
+          </article>
+
+          <button class="consultation__btn">Get your consultation</button>
+        </div>
+      </section>
+      <!-- ----------------------- -->
+      <section class="projects">
+        <!--  -->
+        <div class="projects__container">
+          <!-- LEFT -->
+          <div class="projects__left">
+            <h2 class="projects__left-title">Projects</h2>
+            <ul class="projects__left-list">
+              <li class="projects__left-item active">All</li>
+              <li class="projects__left-item">Commercial</li>
+              <li class="projects__left-item">Residential</li>
+              <li class="projects__left-item">Other</li>
+            </ul>
+          </div>
+          <!-- RİGHT -->
+          <div class="projects__right">
+            <div class="projects__cards">
+              <!-- 1 -->
+              <div class="projects__card">
+                <img
+                  class="projects__img"
+                  src="./img/projects/project1.jpg"
+                  alt="img-1"
+                />
+                <div class="projects__card-content">
+                  <h3 class="projects__card-title">Wildstone Infra Hotel</h3>
+                  <p class="projects__card-text">
+                    2715 Ash Dr. San Jose, South Dakota
+                  </p>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="projects__card">
+                <img
+                  class="projects__img"
+                  src="./img/projects/project2.jpg"
+                  alt="img-2"
+                />
+                <div class="projects__card-content">
+                  <h3 class="projects__card-title">Wish Stone Building</h3>
+                  <p class="projects__card-text">
+                    2972 Westheimer Rd. Santa Ana, Illinois
+                  </p>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="projects__card">
+                <img
+                  class="projects__img"
+                  src="./img/projects/project3.jpg"
+                  alt="img-3"
+                />
+                <div class="projects__card-content">
+                  <h3 class="projects__card-title">Mr. Parkinston’s House</h3>
+                  <p class="projects__card-text">
+                    3517 W. Gray St. Utica, Pennsylvania
+                  </p>
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="projects__card">
+                <img
+                  class="projects__img"
+                  src="./img/projects/project4.jpg"
+                  alt="img-4"
+                />
+                <div class="projects__card-content">
+                  <h3 class="projects__card-title">Oregano Height</h3>
+                  <p class="projects__card-text">
+                    2464 Royal Ln. Mesa, New Jersey
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- btn -->
+            <div class="projects__pagination">
+              <!-- Sol düymə -->
+              <button class="projects__btn" aria-label="Previous Project">
+                <span>&larr;</span> Back
+              </button>
+
+              <!-- Ortadakı Nöqtələr (Pagination Dots) -->
+              <div class="projects__dots">
+                <span class="projects__dot active"></span>
+                <span class="projects__dot"></span>
+                <span class="projects__dot"></span>
+                <span class="projects__dot"></span>
+                <span class="projects__dot"></span>
+              </div>
+
+              <!-- Sağ düymə -->
+              <button class="projects__btn" aria-label="Next Project">
+                Next <span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------------------------------- -->
+      <section class="message">
+        <div class="message__container">
+          <div class="message__content">
+            <h2 class="message__content-title">What can us do for you?</h2>
+            <p class="message__content-text">
+              We are ready to work on a project of any complexity,<br />
+              whether it’s commercial or residential.
+            </p>
+          </div>
+
+          <form class="message__form">
+            <div class="message__form-group">
+              <input type="text" placeholder="Your Name*" required />
+              <input type="email" placeholder="Email*" required />
+            </div>
+
+            <div class="message__form-group">
+              <!-- Input əvəzinə Dropdown Select -->
+              <select required>
+                <option value="" disabled selected hidden>
+                  Reason for contacting*
+                </option>
+                <option value="commercial">Commercial Project</option>
+                <option value="residential">Residential Project</option>
+                <option value="other">Other</option>
+              </select>
+              <input type="tel" placeholder="Phone" />
+            </div>
+
+            <div class="message__textarea-box">
+              <textarea rows="4" placeholder="Message"></textarea>
+              <label class="message__required-label"
+                >indicates a required field</label
+              >
+            </div>
+
+            <button class="message__form-btn" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- ----------------------------------------- -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__left">
+          <p class="footer__left-text">
+            <span class="footer__left-text--span">ADDRESS</span>: 6391 Elgin St.
+            Celina, Delaware 10299
+          </p>
+          <p class="footer__left-text">
+            <span class="footer__left-text--span">PHONE</span>: +84 1102 2703
+          </p>
+          <p class="footer__left-text">
+            <span class="footer__left-text--span">EMAIL</span>: hello@thebox.com
+          </p>
+          <div class="header__logo footer__logo">
+            <img class="footer__logo" src="./img/Group.png" alt="login" />
+            <h1 class="header__title footer__logo">
+              <span class="text-italic">The</span
+              ><span class="text-bold">Box</span>
+            </h1>
+          </div>
+        </div>
+        <div class="footer__right">
+          <h4 class="footer__right-title">NEWSLETTER:</h4>
+          <div class="footer__right-input--container">
+            <input
+              class="footer__right-input"
+              type="email"
+              placeholder="Your email here"
+            />
+            <button class="footer__right-btn">Subscribe</button>
+          </div>
+          <h4 class="footer__right-social">SOCIAL:</h4>
+          <div class="social-icons">
+            <a href="#" class="icon-link">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="icon-link">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="icon-link">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- --------- -->
+    <div class="company">
+      <p class="company--title">TheBox Company © 2022. All Rights Reserved</p>
+    </div>
+  </body>
+</html>

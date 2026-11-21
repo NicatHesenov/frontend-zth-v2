@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background-color: black;
+  color: white;
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    i {
+      font-size: 25px;
+    }
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    i {
+      color: yellow;
+      cursor: pointer;
+    }
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 40px;
+  max-width: 900px;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
+  &__searchings {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    &--input {
+      flex: 1;
+      padding: 10px 15px;
+    }
+    &--select {
+      padding: 10px 15px;
+      min-width: 180px;
+    }
+  }
+
+  &__inputContainer {
+    display: flex;
+    gap: 10px;
+    input {
+      flex: 1;
+      padding: 10px 10px;
+    }
+    button {
+      border: none;
+      cursor: pointer;
+      background-color: green;
+      padding: 5px;
+      color: white;
+      border-radius: 5px;
+    }
+  }
+  &__tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    padding: 10px 5px;
+    padding-left: 10px;
+    border-radius: 5px;
+    button {
+      border: none;
+      background-color: red;
+      color: white;
+      padding: 8px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
+.hidden {
+  display: none;
+}
+
+// .active {
+//   display: block;
+//   background-color:;
+// }

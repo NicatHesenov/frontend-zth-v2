@@ -1,0 +1,56 @@
+.accordionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordionContainer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  gap: 20px;
+  max-width: 900px;
+}
+.accordionContainer__badPractice, .accordionContainer__alternative {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+.accordionContainer .title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-top: 10px solid;
+  padding-top: 10px;
+}
+.accordionContainer .badPractice--title {
+  border-color: red;
+}
+.accordionContainer .badPractice--title i {
+  color: red;
+}
+.accordionContainer .alternative--title {
+  border-color: green;
+}
+.accordionContainer .alternative--title i {
+  color: green;
+}
+.accordionContainer .head-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.accordionContainer .item .head-title i {
+  transition: transform 0.3s ease;
+}
+.accordionContainer .item p {
+  display: none;
+}
+.accordionContainer .item.active .head-title i {
+  transform: rotate(180deg);
+}
+.accordionContainer .item.active p {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

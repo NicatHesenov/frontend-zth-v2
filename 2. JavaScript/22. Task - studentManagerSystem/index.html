@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+    />
+    <link rel="stylesheet" href="./scss/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__right">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h1 class="navbar__right--title">Tələbə Qeydiyyat sistemi</h1>
+      </div>
+      <div class="navbar__left">
+        <i class="fa-regular fa-sun hidden"></i>
+        <i class="fa-regular fa-moon"></i>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="container__searchings">
+        <input
+          class="container__searchings--input"
+          type="text"
+          placeholder="Ad, Soyad və ya Qrup üzrə axtar..."
+        />
+
+        <select class="container__searchings--select" name="select" id="select">
+          <option value="">Sıralama</option>
+          <option value="name">Ad üzrə A-Z</option>
+          <option value="surname">Soyad üzrə A-Z</option>
+          <option value="group">Qrup üzrə A-Z</option>
+        </select>
+      </div>
+
+      <div class="container__inputContainer">
+        <input
+          class="container__inputContainer--name"
+          type="text"
+          placeholder="Ad"
+        />
+        <input
+          class="container__inputContainer--surname"
+          type="text"
+          placeholder="Soyad"
+        />
+        <input
+          class="container__inputContainer--group"
+          type="text"
+          placeholder="Qrup (məs: 11A)"
+        />
+        <button class="addBtn">Əlavə et</button>
+      </div>
+
+      <div class="container__tasks"></div>
+    </div>
+    <script src="./sript.js"></script>
+  </body>
+</html>

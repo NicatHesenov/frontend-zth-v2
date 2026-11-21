@@ -1,0 +1,98 @@
+@import "../base/variables";
+
+.header {
+  &__container {
+    width: 100%;
+    background-color: $navbar-bg-color;
+    color: $white-color;
+    font-size: $header-fontSize;
+  }
+  &__content {
+    @include flex-center(flex, space-between, center, 0);
+    padding: 2rem;
+  }
+  &__logo-title {
+    font-variant-ligatures: none;
+    span {
+      color: $primary-color;
+    }
+  }
+  &__logo-phone {
+    display: none;
+  }
+  &__actions {
+    @include flex-center(flex, center, center, 1rem);
+  }
+  &__btns {
+    display: none;
+  }
+  &__search-btn {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+  }
+  &__mobile-controls {
+    display: flex;
+    gap: 1rem;
+  }
+  @media (min-width: $breakpoint-lg) {
+    &__mobile-controls {
+      display: none;
+    }
+    &__btns {
+      @include flex-center(flex, center, center, 0);
+
+      font-size: 1.5rem;
+      :hover {
+        cursor: pointer;
+      }
+    }
+    &__btn--primary,
+    &__btn--secondary {
+      border-radius: 15px;
+      padding: 0.7rem;
+      margin-left: 20px;
+      background-color: $primary-color;
+    }
+  }
+}
+.nav {
+  display: none;
+  @media (min-width: $breakpoint-lg) {
+    padding: 20px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // @extend %font-text;
+    &__links {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      list-style: none;
+    }
+    .link-item {
+      color: black;
+    }
+    &__input {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #f1f3f4; // Figma-ya uyğun açıq fon
+      padding: 10px 16px;
+      border-radius: 50px; // Kapsul (pill) forması
+
+      i {
+        color: #757575; // İkonun rəngi
+      }
+
+      input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  }
+}

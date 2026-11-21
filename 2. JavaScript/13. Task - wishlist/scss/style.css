@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wishlist {
+  padding: 20px;
+  font-size: 15px;
+}
+.wishlist__container {
+  display: flex;
+  justify-content: space-around;
+}
+.wishlist__products, .wishlist__favorites {
+  display: flex;
+  gap: 20px;
+}
+.wishlist__products--card, .wishlist__favorites--card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  gap: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.wishlist__products--card button, .wishlist__favorites--card button {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.wishlist__products--card .primary, .wishlist__favorites--card .primary {
+  background-color: blue;
+  color: white;
+}
+.wishlist__products--card .secondary, .wishlist__favorites--card .secondary {
+  background-color: green;
+  color: white;
+}
+.wishlist__products--card .third, .wishlist__favorites--card .third {
+  background-color: red;
+  color: white;
+}
+.wishlist__favorites {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  background-color: gray;
+}/*# sourceMappingURL=style.css.map */

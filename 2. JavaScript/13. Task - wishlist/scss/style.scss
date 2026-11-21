@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wishlist {
+  padding: 20px;
+  font-size: 15px;
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__products,
+  &__favorites {
+    display: flex;
+    gap: 20px;
+    &--card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid;
+      gap: 5px;
+      padding: 10px;
+      border-radius: 10px;
+
+      button {
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .primary {
+        background-color: blue;
+        color: white;
+      }
+      .secondary {
+        background-color: green;
+        color: white;
+      }
+      .third {
+        background-color: red;
+        color: white;
+      }
+    }
+  }
+  &__favorites {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    background-color: gray;
+  }
+}

@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.title {
+  width: 100%;
+  max-width: 600px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 10px;
+}
+
+.workerManagerSystem {
+  border: 1px solid;
+  padding: 20px;
+}
+.workerManagerSystem__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.workerManagerSystem__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.workerManagerSystem--btn {
+  width: 100%;
+  max-width: 80px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+.workerManagerSystem input {
+  width: 100%;
+  max-width: 130px;
+  padding: 5px;
+}
+.workerManagerSystem__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.workerManagerForm {
+  width: 100%;
+  max-width: 550px;
+}
+.workerManagerForm table {
+  border-collapse: collapse;
+  max-width: 550px;
+  width: 100%;
+}
+.workerManagerForm table th,
+.workerManagerForm table td {
+  max-width: 550px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+.workerManagerForm table th button,
+.workerManagerForm table td button {
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+}
+.workerManagerForm table th .primary,
+.workerManagerForm table td .primary {
+  background-color: green;
+  color: white;
+}
+.workerManagerForm table th .secondary,
+.workerManagerForm table td .secondary {
+  background-color: red;
+  color: white;
+}
+.workerManagerForm table th {
+  background-color: #f4f4f4;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=style.css.map */

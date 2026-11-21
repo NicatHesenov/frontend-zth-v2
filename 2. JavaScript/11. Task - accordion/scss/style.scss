@@ -1,0 +1,68 @@
+.accordionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20px;
+    max-width: 900px;
+  }
+  &__badPractice,
+  &__alternative {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-top: 10px solid;
+    padding-top: 10px;
+  }
+  .badPractice--title {
+    border-color: red;
+    i {
+      color: red;
+    }
+  }
+
+  .alternative--title {
+    border-color: green;
+    i {
+      color: green;
+    }
+  }
+  .head-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .item {
+    .head-title {
+      i {
+        transition: transform 0.3s ease; // Fırlanmanın hamar olması üçün
+      }
+    }
+    p {
+      display: none;
+    }
+
+    &.active {
+      .head-title {
+        i {
+          transform: rotate(180deg);
+        }
+      }
+
+      p {
+        display: block; // Və ya istədiyin açılma effekti
+      }
+    }
+  }
+}

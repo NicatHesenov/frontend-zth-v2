@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 20px;
+}
+.countdown button {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.time-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid black;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */

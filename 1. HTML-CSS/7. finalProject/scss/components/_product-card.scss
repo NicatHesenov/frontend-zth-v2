@@ -1,0 +1,78 @@
+@import "../base/variables";
+.productCards {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__furniture-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    @media (min-width: 768px) {
+      grid-column: span 2; /* 2 sütunu tam örtür */
+    }
+  }
+  .productCard {
+    @include flex-center(flex, center, center, 2rem);
+    @extend %boxs-tamblet;
+    &__content {
+      @include flex-center(flex, center, center, 2rem);
+      flex-direction: column;
+    }
+    &__img {
+      @extend %page-img;
+    }
+    &__title {
+      @extend %font-title;
+    }
+    &__text {
+      @extend %font-text;
+    }
+    &__btns {
+      @extend %page-btns;
+    }
+    &__btn--primary {
+      @extend %service-btn;
+    }
+    &__btn--secondary {
+      @extend %learn-btn;
+    }
+  }
+  .productCard-carpet {
+    background: $primary-bg-linear-gradient;
+    @media (min-width: 768px) {
+      grid-column: span 2;
+    }
+  }
+  .productCard-vinyl {
+    background: $secondary-bg-linear-gradient;
+  }
+  .productCard-laminate {
+    background: $third-bg-linear-gradient;
+  }
+  .productCard-hardwood {
+    background: $fourth-bg-linear-gradient;
+    @media (min-width: 768px) {
+      grid-column: span 2;
+    }
+  }
+  .productCard-tile {
+    background: $fifth-bg-linear-gradient;
+  }
+  .productCard-stone {
+    background: $sixth-bg-linear-gradient;
+  }
+  .productCard-matrl {
+    background: $seventh-bg-linear-gradient;
+    @media (min-width: 768px) {
+      grid-column: span 2;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.pricing {
+  width: 100%;
+  max-width: 1000px;
+  margin: 100px auto;
+  height: 100vh;
+  text-align: center;
+}
+.pricing__title {
+  margin-bottom: 70px;
+}
+.pricing-card {
+  width: 300px;
+  height: 400px;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 50px 30px;
+}
+.pro {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 310px;
+  min-height: 500px;
+  padding: 50px 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+.pricing-card > i,
+h2,
+h3,
+p {
+  margin-bottom: 25px;
+}
+p {
+  font-size: 15px;
+  line-height: 2;
+}
+i {
+  font-size: 30px;
+}
+h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+h3 {
+  font-size: 36px;
+  font-weight: 800;
+}
+.basic > i {
+  color: red;
+}
+.pro > i {
+  color: green;
+}
+.enterprise > i {
+  color: blue;
+}
+.pricing-card > button {
+  border: 1px solid;
+  padding: 10px 70px;
+  border-radius: 50px;
+}
+.basic > button {
+  background-color: red;
+  color: white;
+}
+.pro > button {
+  background-color: green;
+  color: white;
+}
+.enterprise > button {
+  background-color: blue;
+  color: white;
+}
