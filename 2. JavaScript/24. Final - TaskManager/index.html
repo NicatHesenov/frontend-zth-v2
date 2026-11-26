@@ -21,7 +21,7 @@
         </div>
         <div class="taskManager__header__right">
           <i class="fa-regular fa-moon"></i>
-          <i class="fa-regular fa-sun"></i>
+          <i class="fa-regular fa-sun hidden"></i>
         </div>
       </div>
 
@@ -29,7 +29,11 @@
         <div class="taskManager__stat taskManager__stat--total">
           <div class="taskManager__stat-info">
             <p class="taskManager__stat-title">Ümumi Tapşırıq</p>
-            <span class="taskManager__stat-count" id="totalCount">0</span>
+            <span
+              class="taskManager__stat-count taskManager__stat--total-count"
+              id="totalCount"
+              >0</span
+            >
           </div>
           <span class="taskManager__stat-bg"
             ><i class="fa-regular fa-circle"></i
@@ -39,7 +43,11 @@
         <div class="taskManager__stat taskManager__stat--active">
           <div class="taskManager__stat-info">
             <p class="taskManager__stat-title">Aktiv</p>
-            <span class="taskManager__stat-count" id="activeCount">0</span>
+            <span
+              class="taskManager__stat-count taskManager__stat--active-count"
+              id="activeCount"
+              >0</span
+            >
           </div>
           <span class="taskManager__stat-bg"
             ><i class="fa-regular fa-circle"></i
@@ -49,12 +57,138 @@
         <div class="taskManager__stat taskManager__stat--completed">
           <div class="taskManager__stat-info">
             <p class="taskManager__stat-title">Tamamlandı</p>
-            <span class="taskManager__stat-count" id="completedCount">0</span>
+            <span
+              class="taskManager__stat-count taskManager__stat--completed-count"
+              id="completedCount"
+              >0</span
+            >
           </div>
           <span class="taskManager__stat-bg"
             ><i class="fa-regular fa-circle-check"></i
           ></span>
         </div>
+      </div>
+
+      <form class="taskManager__addTask" id="taskForm">
+        <input
+          class="taskManager__addTask-inp"
+          id="taskInput"
+          type="text"
+          placeholder="Yeni tapşırıq əlavə edin..."
+          autocomplete="off"
+        />
+        <select
+          name="priority"
+          id="prioritySelect"
+          class="taskManager__addTask-select"
+        >
+          <option value="low">Aşağı</option>
+          <option value="medium" selected>Orta</option>
+          <option value="high">Yüksək</option>
+        </select>
+        <button type="submit" class="taskManager__addTask-btn" id="submitBtn">
+          <i class="fa-solid fa-plus" id="submitIcon"></i>
+          <span id="submitText">Əlavə et</span>
+        </button>
+      </form>
+
+      <div class="taskManager__controls">
+        <div class="taskManager__controls-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Tapşırıq axtar..."
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="taskManager__controls-group">
+          <button
+            type="button"
+            class="taskManager__controls-filter taskManager__controls-group--active"
+            data-filter="all"
+          >
+            Hamısı
+          </button>
+          <button
+            type="button"
+            class="taskManager__controls-group--filter"
+            data-filter="active"
+          >
+            Aktiv
+          </button>
+          <button
+            type="button"
+            class="taskManager__controls-group--filter"
+            data-filter="completed"
+          >
+            Tamamlandı
+          </button>
+        </div>
+
+        <button
+          type="button"
+          class="taskManager__controls-group--action"
+          id="exportBtn"
+          title="JSON olaraq yüklə (Export)"
+        >
+          <i class="fa-solid fa-download"></i>
+        </button>
+        <button
+          type="button"
+          class="taskManager__controls-group--action"
+          id="importBtn"
+          title="JSON faylından yüklə (Import)"
+        >
+          <i class="fa-solid fa-upload"></i>
+        </button>
+        <input type="file" id="importInput" accept=".json" hidden />
+      </div>
+
+      <div class="taskManager__empty">
+        <i class="fa-regular fa-circle"></i>
+        <h3>Heç bir tapşırıq tapılmadı</h3>
+        <p>Yeni tapşırıq əlavə etməklə başlayın</p>
+      </div>
+      <ul class="taskManager__list" id="taskList">
+        <li class="taskManager__item">
+          <div class="taskManager__item-left">
+            <input type="checkbox" class="taskManager__item-checkbox" />
+            <span class="taskManager__item-text">Nümunə tapşırıq</span>
+          </div>
+
+          <div class="taskManager__item-right">
+            <span
+              class="taskManager__item-badge taskManager__item-badge--medium"
+            >
+              Orta
+            </span>
+            <button
+              type="button"
+              class="taskManager__item-btn taskManager__item-btn--edit"
+              title="Redaktə et"
+            >
+              <i class="fa-solid fa-pen"></i>
+            </button>
+            <button
+              type="button"
+              class="taskManager__item-btn taskManager__item-btn--delete"
+              title="Sil"
+            >
+              <i class="fa-regular fa-trash-can"></i>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="toast-container" id="toastContainer">
+      <div class="toast toast--success">
+        <div>
+          <h4>Uğurlu</h4>
+          <p>Yeni tapşırıq əlavə edildi</p>
+        </div>
+        <i class="fa-solid fa-xmark"></i>
       </div>
     </div>
     <script src="./script.js"></script>
